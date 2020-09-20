@@ -1,0 +1,22 @@
+<html>
+<body>
+<form method="post" action=""> 
+Enter the age of person <input type="text" name="age" ><br>
+Enter the weight of the person <input type="text" name="weight" ><br>
+<input type="submit" >
+</form>
+<?php
+
+$age=$_POST['age'];
+$wt=$_POST['weight'];
+if($age>18 && $age<=55 && $wt>45)
+{
+echo "person is eligible for blood donation";
+}
+else
+{
+echo "person is not eligible for blood donation";
+}
+?>
+</body>
+</html>
